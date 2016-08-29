@@ -1,17 +1,51 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Angular 2 QuickStart</title>
+    <base href="/">
+      <!-- start: Meta -->
+    <title>Welcome To Speedisha</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Speedisha Digital Currency Exchange Platform"/>
+    <meta name="keywords" content="Currency exchange services, Paypal/Skrill USD to M-Pesa/AirtelMoney/Equitel KES, M-Pesa/AirtelMoney/Equitel KES to Paypal/Skrill USD, btc to M-Pesa/AirtelMoney/ Equitel KES, M-Pesa/Airtel Money/ Equitel to btc" />
+    <meta name="author" content="Speedisha Africa"/>
+    <!-- end: Meta -->
+    
+    <!-- start: Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- end: Mobile Specific -->
+    
+    <!-- start: Facebook Open Graph -->
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <!-- end: Facebook Open Graph -->
+
+      <!-- start: CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/slider1.css" rel="stylesheet">
+    <link href="assets/css/slider2.css" rel="stylesheet">
+    <link href="assets/css/slider3.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
+    <!-- end: CSS -->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
 
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
-
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-
     <script src="systemjs.config.js"></script>
     <script>
       System.import('app').catch(function(err){ console.error(err); });
@@ -19,6 +53,948 @@
   </head>
 
   <body>
-    <my-app>Loading...</my-app>
+        <header>
+      <!--start: Navigation -->
+        <div class="navigation"> 
+          <div class="navbar navbar-fixed-top">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img class="img-responsive" src="assets/img/logo.png"></a>
+                </div>
+                <div class="navbar-inner">
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#" class="home">Home</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#" class="services">PayPal Services</a></li>
+                          <li><a href="#" class="services">Skrill Services</a></li>
+                          <li><a href="#" class="services">Bitcoin Services</a></li>
+                        </ul>
+                      <li><a href="#" class="pricing">Community Forum</a></li>
+                      <li><a href="#" class="portfolio">Support</a></li>
+                      <!-- <li><a href="#" class="team">Team</a></li> -->
+                      <li><a href="#" class="contact">Customer Support</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#" class="about">Login/Sign Up</a></li>
+                      <!-- <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Profile</a></li>
+                          <li><a href="#">Transactions</a></li>
+                          <li><a href="#">Settings</a></li>
+                        </ul>
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!--end: Navigation --> 
+        </header><!--end: Header-->
+    <div class="container">
+        <router-outlet></router-outlet>
+  <!-- start: 1st Page - Home -->
+  <div id="home">
+
+    <div class="demo-1">
+      <div id="slider" class="sl-slider-wrapper">
+        <div class="sl-slider">
+
+          <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+            <div class="sl-slide-inner">
+              <div class="deco" data-icon=""></div>
+              <h2>Welcome To Speedisha Africa</h2>
+              <blockquote>
+                <p>
+                  Your most convinient digital currency exchange partner.
+                </p>
+                <cite>Paypal/Skrill/Bitcoins To Mpesa/AirtelMoney/Equitel</cite>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+            <div class="sl-slide-inner">
+              <div class="deco" data-icon="$$"></div>
+              <h2>Paypal Currency To Mobile Money</h2>
+              <blockquote>
+                <p>We exchange PayPal currency to mobile currency of your preferred wallet(M-Pesa, AirtelMoney, Equitel) and vice versa</p>
+                <cite>Paypal Currency <=> Mobile Money</cite></blockquote>
+            </div>
+          </div>
+
+          <div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="deco" data-icon="$$"></div>
+              <h2>Skrill Currency to Mobile Money</h2>
+              <blockquote>
+                <p>
+                  We exchange Skrill currency to mobile currency of your preferred wallet(M-Pesa, AirtelMoney, Equitel) and vice versa
+                </p>
+                <cite>Skrill Currency <=> Mobile Money</cite>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="deco" data-icon="BTC"></div>
+              <h2>Bitcoins To Mobile Money</h2>
+              <blockquote>
+                <p>
+                  We exchange Bitcoins to mobile currency of your preferred wallet(M-Pesa, AirtelMoney, Equitel) and vice versa
+                </p>
+                <cite>Skrill Currency <=> Mobile Money</cite>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="sl-slide bg-5" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="deco" data-icon="SA"></div>
+              <h2>Welcome To Speedisha Africa</h2>
+              <blockquote>
+                <p>
+                  Your most convinient digital currency exchange partner.
+                </p>
+                <cite>Paypal/Skrill/Bitcoins To Mpesa/AirtelMoney/Equitel</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div><!-- /sl-slider -->
+
+        <nav id="nav-arrows" class="nav-arrows">
+          <span class="nav-arrow-prev">Previous</span>
+          <span class="nav-arrow-next">Next</span>
+        </nav>
+
+        <nav id="nav-dots" class="nav-dots">
+          <span class="nav-dot-current"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </nav>
+
+      </div><!-- /slider-wrapper -->
+
+      </div>
+
+  </div>
+  <!-- end: 1st Page - Home -->
+  <my-app>Loading....</my-app>
+  
+  
+  <!-- start: 3rd Page - Pricing Tables -->
+  <div id="pricing" class="color blue">
+    
+    <!--start: Container -->
+    <div class="container">
+
+      <!--start: Wrapper -->
+      <div class="wrapper span12">
+
+              <!-- start: Page Title -->
+      <div id="page-title">
+
+        <div id="page-title-inner">
+
+          <h2><span>Price</span></h2>
+
+        </div>  
+
+      </div>
+      <!-- end: Page Title -->
+        
+      <!-- start: Table -->
+      <div class="four-tables">
+        
+        <!-- start: Row -->
+        <div class="row-fluid">
+          
+          <div class="span3">
+            <div class="pricing-table">
+              <div class="color-cccddd">
+                <h3>Standard</h3>
+                <h4><span class="price">€9.99</span> <span class="time">per month</span></h4>
+                <ul>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                </ul>
+                <a href="#" class="buy"><span>Buy</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="span3">
+            <div class="pricing-table">
+              <div class="color-666777">
+                <h3>Premium</h3>
+                <h4><span class="price">€29.99</span> <span class="time">per month</span></h4>
+                <ul>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                </ul>
+                <a href="#" class="buy"><span>Buy</span></a>
+              </div>
+            </div>
+          </div>  
+
+          <div class="span3">
+            <div class="pricing-table best-option">
+              <div class="color-custom">
+                <h3>Professional</h3>
+                <h4><span class="price">€49.99</span> <span class="time">per month</span></h4>
+                <ul>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                </ul>
+                <a href="#" class="buy"><span>Buy</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="span3">
+            <div class="pricing-table">
+              <div class="color-666777">
+                <h3>Ultimate</h3>
+                <h4><span class="price">€99.99</span> <span class="time">per month</span></h4>
+                <ul>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                  <li>Custom option</li>
+                </ul>
+                <a href="#" class="buy"><span>Buy</span></a>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        <!--end: Row -->
+
+      </div>
+      <!-- end: Table -->
+      </div>
+      <!-- end: Wrapper -->
+    
+    </div>
+    <!--end: Container -->
+    
+  </div>
+  <!-- end: 3rd Page - Pricing Tables -->
+  
+  <!-- start: 4th Page - Portfolio -->
+  <div id="portfolio" class="color white">
+    
+    <!--start: Container -->
+    <div class="container">
+
+      <!--start: Wrapper -->
+      <div class="wrapper span12">
+  
+              <!-- start: Page Title -->
+      <div id="page-title">
+
+        <div id="page-title-inner">
+
+          <h2><span>Portfolio</span></h2>
+
+        </div>  
+
+      </div>
+      <!-- end: Page Title -->
+      
+      <!-- start: Flexslider -->
+      <div class="slider">
+        <div id="flex1" class="flexslider">
+          <ul class="slides">
+
+            <li><div class="picture"><img src="assets/img/slider/slider1.jpg" alt="" /></div></li>
+
+            <li><div class="picture"><img src="assets/img/slider/slider2.jpg" alt="" /></div></li>
+
+            <li><div class="picture"><img src="assets/img/slider/slider3.jpg" alt="" /></div></li>
+
+          </ul>
+        </div>
+      </div>
+      <!-- end: Flexslider -->
+
+      <div id="filters">
+        <ul class="option-set" data-option-key="filter">
+          <li><a href="#filter" class="selected" data-option-value="*">All</a></li>
+          <li>/</li>
+          <li><a href="#filter" data-option-value=".admin">Admin</a></li>
+          <li>/</li>
+          <li><a href="#filter" data-option-value=".dashboard">Dashboard</a></li>
+          <li>/</li>
+          <li><a href="#filter" data-option-value=".website">Website</a></li>
+          <li>/</li>
+          <li><a href="#filter" data-option-value=".html5">HTML5</a></li>
+          <li>/</li>
+          <li><a href="#filter" data-option-value=".css3">CSS3</a></li>
+          <li>/</li>
+          <li><a href="#filter" data-option-value=".responsive">Responsive</a></li>
+        </ul>
+      </div>
+
+      <!-- start: Portfolio -->
+      <div id="portfolio-wrapper" class="row-fluid">
+                
+        <div class="span4 portfolio-item website html5 css3 responsive">
+          
+          <div class="picture"><a href="http://smart.bootstrapmaster.com" title="Smart Responsive Template"><img src="assets/img/portfolio/smart.png" alt=""/><div class="image-overlay-link"></div></a>
+          
+            <div class="item-description alt">
+              <h5><a href="http://smart.bootstrapmaster.com">Smart Responsive Bootstrap Template</a></h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>  
+        </div>
+
+        <div class="span4 portfolio-item website html5 css3 responsive">
+          <div class="picture">
+            <a href="http://acme.bootstrapmaster.com" title="Title"><img src="assets/img/portfolio/great.png" alt=""/><div class="image-overlay-link"></div></a>
+              <div class="item-description alt">
+                <h5><a href="http://acme.bootstrapmaster.com">Great Responsive Bootstrap Template</a></h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="span4 portfolio-item website html5 css3 responsive">
+          <div class="picture"><a href="http://magnus.bootstrapmaster.com" title="Title"><img src="assets/img/portfolio/magnus.png" alt=""/><div class="image-overlay-link"></div></a>
+            <div class="item-description alt">
+              <h5><a href="http://magnus.bootstrapmaster.com">Magnus Responsive Bootstrap Template</a></h5>
+              <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+              </p>
+            </div>  
+          </div>
+        </div>
+
+        <div class="span4 portfolio-item admin dashboard html5 css3 responsive">
+          <div class="picture"><a href="http://optimus.bootstrapmaster.com" title="Title"><img src="assets/img/portfolio/optimus.png" alt=""/><div class="image-overlay-link"></div></a>
+            <div class="item-description alt">
+              <h5><a href="http://optimus.bootstrapmaster.com">Optimus Dashboard Bootstrap Template</a></h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="span4 portfolio-item admin dashboard html5 css3 responsive">
+          <div class="picture"><a href="http://perfectum.bootstrapmaster.com" title="Title"><img src="assets/img/portfolio/perfectum.png" alt=""/><div class="image-overlay-link"></div></a>
+            <div class="item-description alt">
+              <h5><a href="http://perfectum.bootstrapmaster.com">Perfectum Dashboard Bootstrap Template</a></h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="span4 portfolio-item website html5 css3 responsive">
+          <div class="picture"><a href="http://redbox.bootstrapmaster.com"><img src="assets/img/portfolio/redbox.png" alt=""/><div class="image-overlay-link"></div></a>
+            <div class="item-description alt">
+              <h5><a href="http://redbox.bootstrapmaster.com">Red Box Responsive Bootstrap Template</a></h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- end: Portfolio -->
+      </div>
+      <!-- end: Wrapper -->
+    
+    </div>
+    <!--end: Container -->
+    
+  </div>
+  <!-- end: 4th Page - Portfolio -->
+  
+  <!-- start: 5th Page - About -->
+  <div id="about" class="color yellow">
+    
+    <!--start: Container -->
+    <div class="container">
+
+      <!--start: Wrapper -->
+      <div class="wrapper span12">
+
+              <!-- start: Page Title -->
+      <div id="page-title">
+
+        <div id="page-title-inner">
+
+            <h2><span>About Us</span></h2>
+
+        </div>  
+
+      </div>
+      <!-- end: Page Title -->        
+    
+      <!--start: Row -->
+        <div class="row-fluid">
+    
+        <div class="span12">
+          
+          <!-- start: About Us -->
+          <div id="story">
+            <h3>Our Story</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+          </div>  
+          <!-- end: About Us -->
+
+          <!-- start: History -->
+          <div id="history">
+            <h3>History</h3>
+            <p>
+              <span class="dropcap">P</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+            <p>
+              <span class="dropcap color">P</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+            <p>
+              <span class="dropcap dark">P</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+          </div>  
+          <!-- end: History -->
+
+        </div>
+        
+      </div>
+      <!--end: Row -->
+      
+      <!-- start: Row -->
+      <div class="row-fluid">   
+        
+        <div class="span12">
+          
+          <!-- start: Skills -->
+              <h3>Our Skills</h3>
+              <ul class="progress-bar">
+            <li>
+                    <h5>Web Design ( 40% )</h5>
+                  </li>
+                <li>
+                    <div class="meter"><span style="width: 40%"></span></div><!-- Edite width here -->
+                  </li>
+            <li>
+                    <h5>Wordpress ( 80% )</h5>
+                  </li>
+                  <li>
+                    <div class="meter"><span style="width: 80%"></span></div><!-- Edite width here -->
+                  </li>
+            <li>
+                    <h5>Branding ( 100% )</h5>
+                  </li>
+                  <li>
+                    <div class="meter"><span style="width: 100%"></span></div><!-- Edite width here -->
+                  </li>
+                  <li>
+                    <h5>SEO Optmization ( 60% )</h5>
+                  </li>
+            <li>
+                    <div class="meter"><span style="width: 60%"></span></div><!-- Edite width here -->
+                  </li>
+              </ul>
+              <!-- end: Skills -->
+            
+        </div>
+        
+      </div>
+      <!--end: Row -->
+      </div>
+      <!-- end: Wrapper -->
+    
+    </div>
+    <!--end: Container -->
+    
+  </div>
+  <!-- end: 5th Page - About -->
+  
+  <!-- start: 6th Page - Team -->
+  <div id="team" class="color white">
+    
+    <!--start: Container -->
+    <div class="container">
+
+      <!--start: Wrapper -->
+      <div class="wrapper span12">
+
+        <!-- start: Page Title -->
+<div id="page-title">
+
+  <div id="page-title-inner">
+
+      <h2><span>Team</span></h2>
+
+  </div>  
+
+</div>
+<!-- end: Page Title -->        
+
+<!-- start: Row -->
+<div class="row-fluid">
+  
+  <div class ="span12">
+    
+    <!-- start: Team -->  
+    <div id="team">
+            
+      <!-- start: Row -->
+      <div class="row-fluid">
+      
+        <!-- start: About Member -->
+        <div class="span3">
+          <div class="avatar">
+            <img class="img-circle" src="assets/img/team_member.jpg" alt="team member">
+          </div>  
+          <div class="team-name">Lucas Luck</div>
+          <div class="position">Co-Founder, CEO</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+          </p>
+          <div class="social_profiles">
+            <ul class="social-bookmarks">
+              <li class="facebook"><a href="">facebook</a></li>
+              <li class="flickr"><a href="">flickr</a></li>
+              <li class="linkedin"><a href="#">linkedin</a></li>
+              <li class="twitter"><a href="#">twitter</a></li>
+            </ul>
+          </div>  
+        </div>
+        <!-- end: About Member -->
+        
+        <hr class="clean visible-phone">
+
+        <!-- start: About Member -->
+        <div class="span3">
+          <div class="avatar">
+            <img class="img-circle" src="assets/img/team_member.jpg" alt="team member">
+          </div>  
+          <div class="team-name">Lucas Luck</div>
+          <div class="position">Co-Founder, CEO</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+          </p>
+          <div class="social_profiles">
+            <ul class="social-bookmarks">
+              <li class="facebook"><a href="">facebook</a></li>
+              <li class="flickr"><a href="">flickr</a></li>
+              <li class="linkedin"><a href="#">linkedin</a></li>
+              <li class="twitter"><a href="#">twitter</a></li>
+            </ul>
+          </div>  
+        </div>
+        <!-- end: About Member -->
+        
+        <hr class="clean visible-phone">
+        
+        <!-- start: About Member -->
+        <div class="span3">
+          <div class="avatar">
+            <img class="img-circle" src="assets/img/team_member.jpg" alt="team member">
+          </div>  
+          <div class="team-name">Lucas Luck</div>
+          <div class="position">Co-Founder, CEO</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+          </p>
+          <div class="social_profiles">
+            <ul class="social-bookmarks">
+              <li class="facebook"><a href="">facebook</a></li>
+              <li class="flickr"><a href="">flickr</a></li>
+              <li class="linkedin"><a href="#">linkedin</a></li>
+              <li class="twitter"><a href="#">twitter</a></li>
+            </ul>
+          </div>  
+        </div>
+        <!-- end: About Member -->
+        
+        <hr class="clean visible-phone">
+
+        <!-- start: About Member -->
+        <div class="span3">
+          <div class="avatar">
+            <img class="img-circle" src="assets/img/team_member.jpg" alt="team member">
+          </div>  
+          <div class="team-name">Lucas Luck</div>
+          <div class="position">Co-Founder, CEO</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+          </p>
+          <div class="social_profiles">
+            <ul class="social-bookmarks">
+              <li class="facebook"><a href="">facebook</a></li>
+              <li class="flickr"><a href="">flickr</a></li>
+              <li class="linkedin"><a href="#">linkedin</a></li>
+              <li class="twitter"><a href="#">twitter</a></li>
+            </ul>
+          </div>  
+        </div>
+        <!-- end: About Member -->
+        
+        <hr class="clean visible-phone">  
+      
+      </div>
+      <!-- end: Row -->
+
+    </div>
+    <!-- end: Team -->
+    
+  </div>  
+  
+</div>  
+<!-- end: Row -->
+      </div>
+      <!-- end: Wrapper -->
+    
+    </div>
+    <!--end: Container -->
+    
+  </div>
+  <!-- end: 6th Page - Team -->
+  
+  <!-- start: 7th Page - Contact -->
+  <div id="mapBg"></div>
+  <div id="contact" class="color blue transparent">
+    
+    <!--start: Container -->
+    <div class="container">
+
+      <!--start: Wrapper -->
+      <div class="wrapper span12">
+
+        
+  
+      <!-- start: Page Title -->
+      <div id="page-title">
+
+        <div id="page-title-inner">
+
+            <h2><span>Contact</span></h2>
+
+        </div>  
+
+      </div>
+      <!-- end: Page Title -->
+      
+      <!-- start: Row -->
+      <div class="row-fluid">   
+        
+        <div class="span12">
+          
+          <!-- start: Contact Info -->
+          <b>creativeLabs</b> •
+          30 South Park Avenue •
+          San Francisco, CA 94108, USA •
+          Phone: (123) 456-7890 •
+          Fax: +08 (123) 456-7890 •
+          Email: contact@companyname.com •
+          Web: companyname.com  
+          <!-- end: Contact Info -->
+        
+        </div>  
+      
+      </div>
+      <!-- end: Row -->
+      
+      <hr class="clean">
+      
+      <!-- start: Row -->
+      <div class="row-fluid">   
+      
+        <!-- start: Map -->
+        <div class="span6">
+          
+          <!-- start: Contact Form -->
+          <div id="contact-form">
+
+            <form method="post" action="">
+              
+              <fieldset>
+                
+                <input tabindex="4" id="name" name="name" type="text" value="" class="span12" placeholder="Name: ..." >
+                <input tabindex="2" id="email" name="email" type="text" value="" class="span12" placeholder="Email: ...">
+                <input tabindex="3" id="www" name="www" type="text" value="" class="span12" placeholder="WWW: ...">
+                <textarea tabindex="3" class="input-xlarge span12" id="message" name="body" rows="7" placeholder="Message: ..."></textarea>
+
+                <div class="actions">
+                  <button tabindex="3" type="submit" class="btn btn-succes btn-large">Send message</button>
+                </div>
+                
+              </fieldset>
+
+            </form>
+
+          </div>
+          <!-- end: Contact Form -->
+          
+
+        </div>
+        <!-- end: Map -->
+        
+        <div class="span6">
+          
+          <!-- starts: Google Maps -->
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+          <div id="googlemaps">
+            <div id="map" class="google-map google-map-full"></div>
+          </div>
+          <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+          <script src="js/jquery.gmap.min.js"></script>
+          <script type="text/javascript">
+            $('#map').gMap({
+              controls: {
+                panControl: false,
+                zoomControl: false,
+                mapTypeControl: false,
+                scaleControl: false,
+                streetViewControl: false,
+                overviewMapControl: false
+              },
+              maptype: 'ROADMAP',
+              scrollwheel: true,
+              zoom: 13,
+              markers: [
+                {
+                  address: 'San Francisco, United States', // Your Adress Here
+                  html: '',
+                  popup: false,
+                }
+
+              ],
+
+            });
+            
+            $('#mapBg').gMap({
+              controls: {
+                panControl: false,
+                zoomControl: false,
+                mapTypeControl: false,
+                scaleControl: false,
+                streetViewControl: false,
+                overviewMapControl: false
+              },
+              maptype: 'ROADMAP',
+              scrollwheel: true,
+              zoom: 13,
+              markers: [
+                {
+                  address: 'San Francisco, United States', // Your Adress Here
+                  html: '',
+                  popup: false,
+                }
+
+              ],
+
+            });
+            
+          </script>
+          <!-- end: Google Maps -->
+        
+        </div>  
+      
+      </div>
+      <!-- end: Row -->
+
+      </div>
+      <!-- end: Wrapper -->
+    
+    </div>
+    <!--end: Container -->
+    
+  </div>
+  <!-- end: 7th Page - Contact -->
+
+  
+
+  <footer>
+    <div id="copyright">
+      Speedisha Africa &copy; 2016 A product of Raensolinc LTD. <a href="http://raensolinc.com" alt="Raenesolinc Ltd, Your Software Services and support Partner">Visit Our Parent Website</a> <img src="assets/img/poland.png" alt="Poland" style="margin-top:-4px">
+    </div>  
+    <div id="social">
+      <a href="http://facebook.com/BootstrapMaster" rel="tooltip" title="Facebook" class="facebook">Facebook</a>
+      <a href="http://facebook.com/BootstrapMaster" rel="tooltip" title="Twitter" class="twitter">Twitter</a>
+      <a href="#" rel="tooltip" title="Pintrest" class="pintrest">Pintrest</a>
+    </div>
+    <div class="navbar navbar-fixed-bottom">
+      <div class="navbar-inner">
+        <a class="btn btn-navbar btnOverlay" data-toggle="collapse" data-target=".nav-collapse">
+            menu
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+            <li><a href="#" class="home">Home</a></li>
+            <li><a href="#" class="services">About Us</a></li>
+            <li><a href="#" class="services">Services</a></li>
+            <li><a href="#" class="portfolio">Our Rates</a></li>
+            <li><a href="#" class="team">Our Policies</a></li>
+            <li><a href="#" class="pricing">Community Forum</a></li>      
+            <li><a href="#" class="about">FAQs</a></li>
+            <li><a href="#" class="contact">Contact Us</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    
+  </footer> 
+
+    </div>
+    <!-- start: Java Script -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/isotope.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.imagesloaded.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/flexslider.js"></script>
+    <script type="text/javascript" src="assets/js/carousel.js"></script>
+    <script type="text/javascript" src="assets/js/fancybox.js"></script>
+    <script type="text/javascript" src="assets/js/twitter.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.custom.79639.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.ba-cond.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.slitslider.js"></script>
+
+    <script type="text/javascript" src="assets/js/excanvas.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.flot.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.flot.pie.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.flot.stack.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.flot.resize.min.js"></script>
+
+    <script defer="defer" src="assets/js/custom.js"></script>
+    <script type="text/javascript"> 
+      $(function() {
+      
+        var Page = (function() {
+
+          var $navArrows = $( '#nav-arrows' ),
+            $nav = $( '#nav-dots > span' ),
+            slitslider = $( '#slider' ).slitslider( {
+              onBeforeChange : function( slide, pos ) {
+
+                $nav.removeClass( 'nav-dot-current' );
+                $nav.eq( pos ).addClass( 'nav-dot-current' );
+
+              }
+            } ),
+
+            init = function() {
+
+              initEvents();
+              
+            },
+            initEvents = function() {
+
+              // add navigation events
+              $navArrows.children( ':last' ).on( 'click', function() {
+
+                slitslider.next();
+                return false;
+
+              } );
+
+              $navArrows.children( ':first' ).on( 'click', function() {
+                
+                slitslider.previous();
+                return false;
+
+              } );
+
+              $nav.each( function( i ) {
+              
+                $( this ).on( 'click', function( event ) {
+                  
+                  var $dot = $( this );
+                  
+                  if( !slitslider.isActive() ) {
+
+                    $nav.removeClass( 'nav-dot-current' );
+                    $dot.addClass( 'nav-dot-current' );
+                  
+                  }
+                  
+                  slitslider.jump( i + 1 );
+                  return false;
+                
+                } );
+                
+              } );
+
+            };
+
+            return { init : init };
+
+        })();
+
+        Page.init();
+      
+      });
+    </script>
+    <!-- end: Java Script -->
   </body>
 </html>

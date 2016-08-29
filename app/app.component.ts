@@ -1,7 +1,13 @@
 import { Component } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
-    selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+  selector: 'my-app',
+  templateUrl: 'app/views/app.component.html',
+  directives: [ROUTER_DIRECTIVES],
+  providers: []
 })
-export class AppComponent { }
+
+export class AppComponent {
+  title = 'Speedisha Services';
+}
