@@ -1,26 +1,36 @@
 import { provideRouter, RouterConfig }  from '@angular/router';
 
+import { LoggedInGuard } from 'logged-in.guard';
+
 import { HomeComponent } from './home.component';
-import { PaypalToMpesaComponent } from './paypal-to-mpesa.component';
-import { MpesaToPaypalComponent } from './mpesa-to-paypal.component';
-import { ServicesComponent } from './services.component';
-import { CommunityForumComponent } from './community-forum.component';
-import { SupportComponent } from './support.component';
+import { PaypalServicesComponent } from './paypal-services.component';
+import { SkrillServicesComponent } from './skrill-services.component';
+import { BitcoinServicesComponent } from './bitcoin-services.component';
+import { RatesCalculatorComponent } from './rates-calculator.component';
+import { ContactComponent } from './contact.component';
 import { LoginComponent } from './login.component';
 import { SignupComponent } from './signup.component';
-import { ProfileComponent } from './profile.component';
+import { MyAccountComponent } from './my-account.component';
+import { FaqsComponent } from './faqs.component';
+import { HowWeWorkComponent} from './how-we-work.component';
+import { AboutUsComponent} from './about-us.component';
+import { OurPoliciesComponent} from './our-policies.component';
 	
 const routes: RouterConfig = [
 	{ path: '', redirectTo: '/home', pathMatch: 'full' },
 	{ path: 'home', component: HomeComponent },
-  { path: 'services', component: ServicesComponent },
-    { path: 'paypal-to-mpesa', component: PaypalToMpesaComponent },
-    { path: 'mpesa-to-paypal', component: MpesaToPaypalComponent },
-  { path: 'community-forum', component: CommunityForumComponent },
-  { path: 'support', component: SupportComponent },
+  { path: 'paypal-services', component: PaypalServicesComponent },
+  { path: 'skrill-services', component: SkrillServicesComponent },
+  { path: 'bitcoin-services', component: BitcoinServicesComponent },
+  { path: 'rates-calculator', component: RatesCalculatorComponent },
+  { path: 'faqs', component: FaqsComponent },
+  { path: 'how-we-work', component: HowWeWorkComponent},
+  { path: 'contact', component: ContactComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'profile', component: ProfileComponent }
+  { path: 'my-account', component: MyAccountComponent, canActivate: [LoggedInGuard]},
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'our-policies', component: OurPoliciesComponent }
 ];
 
 export const appRouterProviders = [

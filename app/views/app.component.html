@@ -1,46 +1,70 @@
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-  <div class="container topnav">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <!-- <a class="navbar-brand topnav" href="#">Speedisha Africa</a> -->
-      <a class="navbar-brand topnav" href="#"><img class="img-responsive" src="assets/img/logo.png"></a>
-    </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#services">PayPal Services</a></li>
-            <li><a href="#services">Skrill Services</a></li>
-            <li><a href="#services">Bitcoin Services</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Rates Calculator</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#" class="services">Blog</a></li>
-            <li><a href="#" class="services">Community Forum</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#faqs">FAQs</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </li>
-        <li><a href="#" class="about">Login</a></li>
-        <li><a href="#" class="about">Signup</a></li>
+<section class="container">
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand topnav" href="#">Speedisha Africa</a> -->
+        <a class="navbar-brand topnav" href="#"><img class="img-responsive" src="assets/img/logo.png"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a routerLink="/home">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a routerLink="/paypal-services">
+                  <i class="fa fa-paypal fa-2x" aria-hidden="false"></i> 
+                  PayPal Services
+                </a>
+              </li>
+              <li>
+                <a routerLink="/skrill-services">
+                  <div class="custom-icon-skrill"></div>
+                  <i class="pw pw-skrill pw-2x"></i>
+                  Skrill Services
+                </a>
+              </li>
+              <li>
+                <a routerLink="/bitcoin-services">
+                  <i class="fa fa-btc fa-2x" aria-hidden="true"></i>
+                  Bitcoin Services
+                </a>
+              </li>
+              <li>
+                <a routerLink="/mobile-money-services">
+                  <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+                  Mobile Money Services
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a routerLink="/rates-calculator">Rates Calculator</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="services">Blog</a></li>
+              <li><a href="#" class="services">Community Forum</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="/how-we-work">How We Work</a></li>
+              <li><a routerLink="/faqs">FAQs</a></li>
+              <li><a routerLink="/contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <li><a routerLink="/login">Login</a></li>
+          <li><a routerLink="/signup">Signup</a></li>
               <!-- <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -54,130 +78,61 @@
           <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-      </nav>
+  </nav>
+</section>
 
-      <router-outlet></router-outlet>
 
-      <a  name="contact"></a>
-      <div class="banner">
+    <router-outlet></router-outlet>
 
-        <div class="container">
 
-          <div class="row">
-            <div class="col-lg-3">
-              <h2>Get In Touch</h2>
-            </div>
-            <div class="col-lg-6">
-              <!-- start: Row -->
-              <div class="row-fluid">   
-                <div class="span12">
-                  <!-- start: Contact Info -->
-                  <h3>We Offer 24/7 Support. Contact us via</h3>
-                  Phone: +254718117000, +254718117000, +254718117000<br>
-                  Skype: speedisha.africa<br>
-                  Email: info@speedishaafrica.com, support@speedishaafrica.com <br>
-                  <!-- end: Contact Info -->
-                </div>
-              </div>
-              <!-- end: Row -->
-              <hr class="clean">
 
-              <!-- start: Row -->
-              <div class="row-fluid">   
-                <div class="span12">
-                  <h3>Leave Us A Message</h3>
-                  <!-- start: Contact Form -->
-                  <div id="contact-form">
-                    <form method="post" action="">
-                      <fieldset>
-                        <input tabindex="4" id="name" name="name" type="text" value="" class="form-control" placeholder="Your Name: ..." /><br>
-                        <input tabindex="2" id="email" name="email" type="text" value="" class="form-control" placeholder="Your Email: ..." /><br>
-                        <textarea tabindex="3" class="input-xlarge form-control" id="message" name="body" rows="7" placeholder="Message: ..."></textarea><br>
-
-                        <div class="actions">
-                          <button tabindex="3" type="submit" class="btn btn-success btn-large">Send message</button>
-                        </div>
-                      </fieldset>
-                    </form>
-                  </div>
-                  <!-- end: Contact Form -->
-                </div>
-              </div>
-            </div>
-            <!-- Start: Social Media Links -->
-
-            <div class="col-lg-3">
-              <!-- start: Row -->
-              <div class="row-fluid">   
-                <div class="span12"> 
-                  <h3>Reach us on Social Media</h3>
-                  <ul class="list-inline banner-social-buttons">
-                    <li>
-                      <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="list-inline content-section-footer">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="#services">How We Work</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="#contact">Rates Calculator</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="#contact">Our Policies</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="#contact">Blog</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="#contact">Community Forum</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="#contact">FAQs</a>
+              </li>
+              <li class="footer-menu-divider">&sdot;</li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+            <p class="copyright text-muted small">Speedisha Africa &copy; 2016 A product of Raensolinc LTD. All Rights Reserved</p>
           </div>
         </div>
-        <!-- /.container -->
       </div>
-      <!-- /.banner -->
-
-
-      <!-- Footer -->
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <ul class="list-inline">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li class="footer-menu-divider">&sdot;</li>
-                <li>
-                  <a href="#about">About</a>
-                </li>
-                <li class="footer-menu-divider">&sdot;</li>
-                <li>
-                  <a href="#services">Services</a>
-                </li>
-                <li class="footer-menu-divider">&sdot;</li>
-                <li>
-                  <a href="#contact">Rates Calculator</a>
-                </li>
-                <li class="footer-menu-divider">&sdot;</li>
-                <li>
-                  <a href="#contact">Our Policies</a>
-                </li>
-                <li class="footer-menu-divider">&sdot;</li>
-                <li>
-                  <a href="#contact">Blog</a>
-                </li>
-                <li class="footer-menu-divider">&sdot;</li>
-                <li>
-                  <a href="#contact">Community Forum</a>
-                </li>
-                <li class="footer-menu-divider">&sdot;</li>
-                <li>
-                  <a href="#contact">FAQs</a>
-                </li>
-                <li class="footer-menu-divider">&sdot;</li>
-                <li>
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
-              <p class="copyright text-muted small">Speedisha Africa &copy; 2016 A product of Raensolinc LTD. All Rights Reserved</p>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      <footer>
+    </footer>
 
 
 
