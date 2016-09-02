@@ -1,6 +1,6 @@
 import { provideRouter, RouterConfig }  from '@angular/router';
 
-import { LoggedInGuard } from 'logged-in.guard';
+//import { LoggedInGuard } from 'logged-in.guard';
 
 import { HomeComponent } from './home.component';
 import { PaypalServicesComponent } from './paypal-services.component';
@@ -28,7 +28,7 @@ const routes: RouterConfig = [
   { path: 'contact', component: ContactComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'my-account', component: MyAccountComponent, canActivate: [LoggedInGuard]},
+  //{ path: 'my-account', component: MyAccountComponent, canActivate: [LoggedInGuard]},
   { path: 'about-us', component: AboutUsComponent },
   { path: 'our-policies', component: OurPoliciesComponent }
 ];

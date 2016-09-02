@@ -1,11 +1,11 @@
 // user.service.ts
 import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
-import localStorage from 'localStorage';
+//import localStorage from 'localStorage';
 
 @Injectable()
-export class UserService {
-  private loggedIn = false;
+export class UserService {}
+  /*private loggedIn = false;
 
   constructor(private http: Http) {
     this.loggedIn = !!localStorage.getItem('auth_token');
@@ -40,4 +40,4 @@ export class UserService {
   isLoggedIn() {
     return this.loggedIn;
   }
-}
+}*/
