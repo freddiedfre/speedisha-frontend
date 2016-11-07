@@ -1,4 +1,4 @@
-/*!
+!
  * @Author: Fredirck A, For Speedisha Africa;
  *
  *
@@ -21,6 +21,24 @@ h6 {
     font-weight: 700;
 }
 
+/*Adjustment for small screen devices*/
+@media (max-width: 480px) {
+    .container {
+      padding:0;
+      margin:0;
+    }
+
+    body {
+      padding:0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+}
+
 .topnav {
     font-size: 14px; 
 }
@@ -38,6 +56,7 @@ h6 {
     color: #f8f8f8;
     background: url(../img/intro-bg.jpg) no-repeat center center;
     background-size: cover;
+    width: 100%;
 }
 
 .intro-message {
@@ -87,6 +106,31 @@ h6 {
     }
 }
 
+/*Small screens adjustments*/
+@media(max-width:480px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li{
+        margin: auto;
+        padding-bottom: 80px;
+        align-content: center;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
 .network-name {
     text-transform: uppercase;
     font-size: 14px;
@@ -119,6 +163,7 @@ h6 {
     float: left;
     width: 200px;
     border-top: 3px solid #e7e7e7;
+    background-color: #8d1262;
 }
 
 .banner {
@@ -167,10 +212,66 @@ h6 {
         margin-bottom: 0;
     }
 }
+@media (max-width: 480px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
 
-footer {
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 5px 5px 5px 5px;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/*footer {
     padding: 50px 0;
     background-color: #f8f8f8;
+
+}*/
+.footer {
+    background: #222222 none repeat scroll 0 0;
+    border-top: 4px solid #8D1262;
+    margin: 0;
+    padding: 20px 0;
+}
+.footer_dv {
+    width: 100%;
+}
+.footer_dv h4 {
+    color: #8D1262;
+    font-family: roboto;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.footer_dv ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.footer_dv ul li:first-child {
+    border-top: medium none;
+    box-shadow: none;
+}
+.footer_dv ul li {
+    border-top: 1px solid #000;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2);
+    color: #f1f2f2;
+    padding: 5px 0;
+}
+.footer_dv p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 15px;
+    text-align: justify;
 }
 
 p.copyright {
@@ -189,6 +290,3 @@ p.copyright {
   width: auto;
 }
 
-
-/*Custom Icons
-================================================================== */

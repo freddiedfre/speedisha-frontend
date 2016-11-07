@@ -15,6 +15,8 @@ import { FaqsComponent } from './faqs.component';
 import { HowWeWorkComponent} from './how-we-work.component';
 import { AboutUsComponent} from './about-us.component';
 import { OurPoliciesComponent} from './our-policies.component';
+import { EpaymentApiComponent} from './epayment-api.component';
+import { P2PFinanceComponent} from './p2p-finance.component';
 	
 const routes: RouterConfig = [
 	{ path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -30,7 +32,9 @@ const routes: RouterConfig = [
   { path: 'signup', component: SignupComponent },
   //{ path: 'my-account', component: MyAccountComponent, canActivate: [LoggedInGuard]},
   { path: 'about-us', component: AboutUsComponent },
-  { path: 'our-policies', component: OurPoliciesComponent }
+  { path: 'our-policies', component: OurPoliciesComponent },
+  { path: 'epayment-api', component: EpaymentApiComponent },
+  { path: 'p2p-finance', component: P2PFinanceComponent }
 ];
 
 export const appRouterProviders = [

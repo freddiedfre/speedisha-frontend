@@ -1,33 +1,33 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'start' ]
-2 info using npm@3.10.5
-3 info using node@v4.4.7
+1 verbose cli [ '/usr/bin/nodejs', '/usr/local/bin/npm', 'start' ]
+2 info using npm@3.10.3
+3 info using node@v4.3.1
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
 5 info lifecycle angular2-quickstart@1.0.0~prestart: angular2-quickstart@1.0.0
 6 silly lifecycle angular2-quickstart@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle angular2-quickstart@1.0.0~start: angular2-quickstart@1.0.0
 8 verbose lifecycle angular2-quickstart@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle angular2-quickstart@1.0.0~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/freddiedfre/Desktop/myProjects/ApacheServerHome/JSApps/AngularJS/speedisha-frontend/node_modules/.bin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:~/.composer/vendor/bin:/usr/local/android-studio/bin/:/home/freddiedfre/Android/Sdk/tools:/home/freddiedfre/Android/Sdk/platform-tools
-10 verbose lifecycle angular2-quickstart@1.0.0~start: CWD: /home/freddiedfre/Desktop/myProjects/ApacheServerHome/JSApps/AngularJS/speedisha-frontend
+9 verbose lifecycle angular2-quickstart@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/home/freddiedfre/Homestead/JSApps/speedisha-frontend1/node_modules/.bin:/usr/bin:/home/freddiedfre/bin:/home/freddiedfre/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+10 verbose lifecycle angular2-quickstart@1.0.0~start: CWD: /home/freddiedfre/Homestead/JSApps/speedisha-frontend1
 11 silly lifecycle angular2-quickstart@1.0.0~start: Args: [ '-c', 'tsc && concurrently "tsc -w" "lite-server" ' ]
 12 silly lifecycle angular2-quickstart@1.0.0~start: Returned: code: 2  signal: null
 13 info lifecycle angular2-quickstart@1.0.0~start: Failed to exec start script
 14 verbose stack Error: angular2-quickstart@1.0.0 start: `tsc && concurrently "tsc -w" "lite-server" `
 14 verbose stack Exit status 2
-14 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:242:16)
+14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:242:16)
 14 verbose stack     at emitTwo (events.js:87:13)
 14 verbose stack     at EventEmitter.emit (events.js:172:7)
-14 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
 14 verbose stack     at emitTwo (events.js:87:13)
 14 verbose stack     at ChildProcess.emit (events.js:172:7)
-14 verbose stack     at maybeClose (internal/child_process.js:827:16)
+14 verbose stack     at maybeClose (internal/child_process.js:821:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 15 verbose pkgid angular2-quickstart@1.0.0
-16 verbose cwd /home/freddiedfre/Desktop/myProjects/ApacheServerHome/JSApps/AngularJS/speedisha-frontend
-17 error Linux 4.6.0-kali1-686-pae
-18 error argv "/usr/bin/nodejs" "/usr/bin/npm" "start"
-19 error node v4.4.7
-20 error npm  v3.10.5
+16 verbose cwd /home/freddiedfre/Homestead/JSApps/speedisha-frontend1
+17 error Linux 4.7.0-kali1-686-pae
+18 error argv "/usr/bin/nodejs" "/usr/local/bin/npm" "start"
+19 error node v4.3.1
+20 error npm  v3.10.3
 21 error code ELIFECYCLE
 22 error angular2-quickstart@1.0.0 start: `tsc && concurrently "tsc -w" "lite-server" `
 22 error Exit status 2

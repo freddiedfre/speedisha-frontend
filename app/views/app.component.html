@@ -1,71 +1,78 @@
-<section class="container">
-  <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-    <div class="container topnav">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
         </button>
         <!-- <a class="navbar-brand topnav" href="#">Speedisha Africa</a> -->
         <a class="navbar-brand topnav" href="#"><img class="img-responsive" src="assets/img/logo.png"></a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li [routerLinkActive]="['active']"><a routerLink="/home">Home</a></li>
+            <li [routerLinkActive]="['active']"><a routerLink="/epayment-api">E-Payments API</a></li>
+            <li [routerLinkActive]="['active']"><a routerLink="/p2p-finance">P2P Financing</a></li>
+            <!-- <li [routerLinkActive]="['active']"><a routerLink="/home">Transfer</a></li> -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Currency Exchange <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li class="divider"></li>
+                    <li><a routerLink="/rates-calculator">Rates Calculator</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Currency Services</li>
+                    <li [routerLinkActive]="['active']">
+                        <a routerLink="/paypal-services">
+                            <i class="fa fa-paypal fa-2x" aria-hidden="false"></i> PayPal Services
+                        </a>
+                    </li>
+                    <li [routerLinkActive]="['active']">
+                        <a routerLink="/skrill-services">
+                            <i class="pw pw-skrill pw-2x"></i> Skrill Services
+                        </a>
+                    </li>
+                    <li [routerLinkActive]="['active']">
+                        <a routerLink="/bitcoin-services">
+                            <i class="fa fa-btc fa-2x" aria-hidden="true"></i> Bitcoin Services
+                        </a>
+                    </li>
+                    <li [routerLinkActive]="['active']">
+                        <a routerLink="/mobile-money-services">
+                            <i class="fa fa-mobile fa-2x" aria-hidden="true"></i> Mobile Money Services
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li class="divider"></li>
+                    <li [routerLinkActive]="['active']"><a href="#" class="services">Blog</a></li>
+                    <li class="divider"></li>
+                    <li [routerLinkActive]="['active']"><a href="#" class="services">Community Forum</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li class="divider"></li>
+                    <li [routerLinkActive]="['active']"><a routerLink="/how-we-work">How We Work</a></li>
+                    <li class="divider"></li>
+                    <li [routerLinkActive]="['active']"><a routerLink="/faqs">FAQs</a></li>
+                    <li class="divider"></li>
+                    <li [routerLinkActive]="['active']"><a routerLink="/contact">Contact Us</a></li>
+                    <li class="divider"></li>
+                </ul>
+            </li>
+        </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a routerLink="/home">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li>
-                <a routerLink="/paypal-services">
-                  <i class="fa fa-paypal fa-2x" aria-hidden="false"></i> 
-                  PayPal Services
-                </a>
-              </li>
-              <li>
-                <a routerLink="/skrill-services">
-                  <div class="custom-icon-skrill"></div>
-                  <i class="pw pw-skrill pw-2x"></i>
-                  Skrill Services
-                </a>
-              </li>
-              <li>
-                <a routerLink="/bitcoin-services">
-                  <i class="fa fa-btc fa-2x" aria-hidden="true"></i>
-                  Bitcoin Services
-                </a>
-              </li>
-              <li>
-                <a routerLink="/mobile-money-services">
-                  <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
-                  Mobile Money Services
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li><a routerLink="/rates-calculator">Rates Calculator</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#" class="services">Blog</a></li>
-              <li><a href="#" class="services">Community Forum</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a routerLink="/how-we-work">How We Work</a></li>
-              <li><a routerLink="/faqs">FAQs</a></li>
-              <li><a routerLink="/contact">Contact Us</a></li>
-            </ul>
-          </li>
-          <li><a routerLink="/login">Login</a></li>
-          <li><a routerLink="/signup">Signup</a></li>
-              <!-- <li class="dropdown">
+            <li [routerLinkActive]="['active']"><a routerLink="/login"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+            <!-- <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Profile</a></li>
@@ -73,67 +80,62 @@
                   <li><a href="#">Settings</a></li>
                 </ul>
               </li> -->
-            </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-  </nav>
-</section>
-
-
-    <router-outlet></router-outlet>
-
-
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+<router-outlet></router-outlet>
+<section class="footer">
+    <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <ul class="list-inline content-section-footer">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li>
-                <a href="#services">How We Work</a>
-              </li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li>
-                <a href="#contact">Rates Calculator</a>
-              </li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li>
-                <a href="#contact">Our Policies</a>
-              </li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li>
-                <a href="#contact">Blog</a>
-              </li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li>
-                <a href="#contact">Community Forum</a>
-              </li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li>
-                <a href="#contact">FAQs</a>
-              </li>
-              <li class="footer-menu-divider">&sdot;</li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-            <p class="copyright text-muted small">Speedisha Africa &copy; 2016 A product of Raensolinc LTD. All Rights Reserved</p>
-          </div>
+            <div class="col-lg-4  col-md-4 col-sm-4">
+                <div class="footer_dv">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li class="line_rv">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">Who Are We</a>
+                        </li>
+                        <li>
+                            <a href="#services">How We Work</a>
+                        </li>
+                        <li><a>Our Policies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4  col-md-4 col-sm-4">
+                <div class="footer_dv">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a>Rates Calculator</a></li>
+                        <li><a>Mobile Services</a></li>
+                        <li><a>PayPal Services</a></li>
+                        <li><a>Skrill Services</a></li>
+                        <li><a>Bitcoin Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 ">
+                <div class="footer_dv ">
+                    <h4>Community &amp; Support</h4>
+                    <ul>
+                        <li>
+                            <a href="#contact ">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact ">Community Forum</a>
+                        </li>
+                        <li>
+                            <a href="#contact ">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#contact ">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>
-
-
-
-
+    </div>
+</section>

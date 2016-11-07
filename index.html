@@ -1,72 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <base href="/">
-  <!-- start: Meta -->
-  <title>Welcome To Speedisha</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Speedisha Digital Currency Exchange Platform"/>
-  <meta name="keywords" content="Currency exchange services, Paypal/Skrill USD to M-Pesa/AirtelMoney/Equitel KES, M-Pesa/AirtelMoney/Equitel KES to Paypal/Skrill USD, btc to M-Pesa/AirtelMoney/ Equitel KES, M-Pesa/Airtel Money/ Equitel to btc" />
-  <meta name="author" content="Speedisha Africa"/>
-  <!-- end: Meta -->
-
-  <!-- start: Mobile Specific -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- end: Mobile Specific -->
-
-  <!-- start: Facebook Open Graph -->
-  <meta property="og:title" content=""/>
-  <meta property="og:description" content=""/>
-  <meta property="og:type" content=""/>
-  <meta property="og:url" content=""/>
-  <meta property="og:image" content=""/>
-  <!-- end: Facebook Open Graph -->
-
-  <!-- start: CSS -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/payment-webfont/style.css">
-  
-  
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
-  <!-- end: CSS -->
-
-  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <base href="/">
+    <!-- start: Meta -->
+    <title>Welcome To Speedisha</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Speedisha Digital Currency Exchange Platform" />
+    <meta name="keywords" content="Currency exchange services, Paypal/Skrill USD to M-Pesa/AirtelMoney/Equitel KES, M-Pesa/AirtelMoney/Equitel KES to Paypal/Skrill USD, btc to M-Pesa/AirtelMoney/ Equitel KES, M-Pesa/Airtel Money/ Equitel to btc" />
+    <meta name="author" content="Speedisha Africa" />
+    <!-- end: Meta -->
+    <!-- start: Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- end: Mobile Specific -->
+    <!-- start: Facebook Open Graph -->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <!-- end: Facebook Open Graph -->
+    <!-- start: CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/payment-webfont/style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
+    <!-- end: CSS -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+    System.import('app').catch(function(err) {
+        console.error(err);
+    });
+    </script>
+</head>
 
-  <!-- Polyfill(s) for older browsers -->
-  <script src="node_modules/core-js/client/shim.min.js"></script>
-  <script src="node_modules/zone.js/dist/zone.js"></script>
-  <script src="node_modules/reflect-metadata/Reflect.js"></script>
-  <script src="node_modules/systemjs/dist/system.src.js"></script>
-  <script src="systemjs.config.js"></script>
-  <script>
-    System.import('app').catch(function(err){ console.error(err); });
-  </script>
-  </head>
+<body>
+    <my-app>Loading....</my-app>
+    <!-- start: Java Script -->
+    <script type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</body>
 
-    <body>    
-        <my-app>Loading....</my-app>
-
-        <!-- start: Java Script -->
-        <script type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
-        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-        <script>
-          $(document).ready(function(){
-              $('ul.nav li.dropdown').hover(function() {
-                alert('ff');
-                $('.dropdown-menu', this).fadeIn();
-              }, function() {
-                $('.dropdown-menu', this).fadeOut('fast');
-              });//hover
-            });
-        </script>
-    </body>
 </html>
